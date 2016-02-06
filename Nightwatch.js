@@ -4,8 +4,8 @@ module.exports = {
   live_output: true,
 
   selenium: {
-    //start_process: true,
-    //server_path: './node_modules/selenium-server/lib/runner/selenium-server-standalone-2.38.0.jar',
+    start_process: false,
+    server_path: './node_modules/selenium-server/lib/runner/selenium-server-standalone-2.38.0.jar',
     log_path: './results',
     host: '127.0.0.1',
     port: 4444,
@@ -29,7 +29,7 @@ module.exports = {
         javascriptEnabled: true,
         acceptSslCerts: true
       },
-      //globals: require('')
+      globals: require('./data/dev')
     },
 
     staging: {
